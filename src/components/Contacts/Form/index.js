@@ -18,11 +18,11 @@ function Form({ addContact, contcts }) {
     return (
         <form onSubmit={onSubmit}>
             <div>
-                <input name="fullname" placeholder='Fullname' onChange={onChangeInput} />
+                <input name="fullname" placeholder='Fullname' onChange={onChangeInput} value={form.fullname} />
             </div>
 
             <div>
-                <input name="phone_number" placeholder='Phone Number' onChange={onChangeInput} />
+                <input name="phone_number" placeholder='Phone Number' onChange={onChangeInput} value={form.phone_number} />
             </div>
 
             <div>
