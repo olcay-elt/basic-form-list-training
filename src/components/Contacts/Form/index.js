@@ -13,7 +13,10 @@ function Form({ addContact, contcts }) {
             return false;
         }
         addContact([...contacts, form]);
-        console.log(form);
+
+        setForm({ fullname: "", phone_number: "" });
+
+
     }
     return (
         <form onSubmit={onSubmit}>
