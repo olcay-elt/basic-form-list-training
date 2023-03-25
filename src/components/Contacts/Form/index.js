@@ -1,7 +1,8 @@
 import { useState } from 'react'
 
+const initialFormValues = { fullname: "", phone_number: "" };
 function Form({ addContact, contcts }) {
-    const [form, setForm] = useState({ fullname: "", phone_number: "" });
+    const [form, setForm] = useState(initialFormValues);
 
     const onChangeInput = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value })
@@ -14,10 +15,11 @@ function Form({ addContact, contcts }) {
         }
         addContact([...contacts, form]);
 
-        setForm({ fullname: "", phone_number: "" });
+        setForm(initialFormValues);
 
 
-    }
+    };
+
     return (
         <form onSubmit={onSubmit}>
             <div>
