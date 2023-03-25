@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 
 import Form from './Form'
 import List from "./List"
+
 function Contacts() {
     const [contacts, setContacts] = useState([
         {
@@ -25,4 +26,4 @@ function Contacts() {
     )
 }
 
-export default Contacts
+export default Contacts;
