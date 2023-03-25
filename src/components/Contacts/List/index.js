@@ -4,10 +4,9 @@ function List({ contacts }) {
     return (
         <div>
             <ul>
-                {
-                    contacts.map((contact, i) =>
-                        <li key={i}>{contact.fullname}</li>
-                    )}
+                {contacts.map((contact, i) =>
+                    <li key={i}>{contact.fullname}</li>
+                )}
             </ul>
         </div>
     )
