@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function Form() {
+function Form({ addContact }) {
     const [form, setForm] = useState({ fullname: "", phone_number: "" });
 
     const onChangeInput = (e) => {
@@ -8,6 +8,11 @@ function Form() {
     };
     const onSubmit = (e) => {
         e.preventDefault();
+
+        if (form.fullname === "" || form.phone_number === "") {
+            return false;
+        }
+        addContact([...contacts, form]);
         console.log(form);
     }
     return (
