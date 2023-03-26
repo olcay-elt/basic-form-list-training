@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import "../style.css"
+
 function List({ contacts }) {
     const [filterText, setFilterText] = useState(" ");
     const filtered = contacts.filter((item) => {

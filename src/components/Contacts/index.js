@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-import { } from "./style.css"
+import "./style.css"
 
 import Form from './Form'
 import List from "./List"

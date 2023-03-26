@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import "../style.css"
+
 const initialFormValues = { fullname: "", phone_number: "" };
 
 function Form({ addContact, contacts }) {
