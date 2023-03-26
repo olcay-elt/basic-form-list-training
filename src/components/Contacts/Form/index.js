@@ -1,7 +1,5 @@
 import { useState } from 'react'
 
-import "../style.css"
-
 const initialFormValues = { fullname: "", phone_number: "" };
 
 function Form({ addContact, contacts }) {
@@ -24,15 +22,21 @@ function Form({ addContact, contacts }) {
     return (
         <form onSubmit={onSubmit}>
             <div>
-                <input name="fullname" placeholder='Fullname' onChange={onChangeInput} value={form.fullname} />
+                <input name="fullname"
+                    placeholder='Fullname'
+                    onChange={onChangeInput}
+                    value={form.fullname} />
             </div>
 
             <div>
-                <input name="phone_number" placeholder='Phone Number' onChange={onChangeInput} value={form.phone_number} />
+                <input name="phone_number"
+                    placeholder='Phone Number'
+                    onChange={onChangeInput}
+                    value={form.phone_number} />
             </div>
 
-            <div>
-                <button className='btn'>
+            <div className='btn'>
+                <button>
                     Add
                 </button>
             </div>
